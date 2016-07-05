@@ -30,42 +30,101 @@
                 <div class="sign" id="signRight"> &#62; </div>
             </div>
         </section>
-        <section id="photos">
-            <div class="container">
+        <section >
+            <div class="container" id="photoContainer">
                 <div class="photo" id="photo1">
-                    <div id="photo1_1">
+                    <div class="photoText">
                         <p>Chair CLAIR</p>
                     </div>
                 </div>
                 <div class="photo" id="photo2">
-                    <div id="photo2_2">
+                    <div class="photoText">
                         <p>Chair MARGARITA</p>
                     </div>
                 </div>
                 <div class="photo" id="photo3">
-                    <div id="photo3_3">
-                        <h2>Finds all inputs</h2>
+                        <p id="headline">Finds all inputs</p>
                         <p>Lorem ipsum dolor sit amet, pro graeci accumsan inciderint eu, at est ludus recusabo platonem. Quo in iisque suscipiantur reprehendunt, ad pro quis luptatum, eu vel tale enim posse. Ex ridens sensibus intellegebat his, at alii vituperata interesset eam. Ne tempor cotidieque neglegentur est. Debet accusamus vix et.</p>
-                    </div>
                 </div>
             </div>
         </section>
         <section id="cennik">
             <div class="container">
                 <h3>CENNIK</h3>
-                <div class="cennik">
+                <div class="cennik" id="cennikFirst">
+                    <p>BASIC PLAN</p>
+                    <div class="price">
+                        <p class="price1"><b>85<sup>99</sup></b></p>
+                        <p class="price2">PLN/MSC</p>
+                    </div>
+                    <div class="buy">Zakup towaru + dowóz</div>
+                    <div class="service">Serwis</div>
+                    <input class="button" type="button" value="DOŁĄCZ" />
+                    <div class="ring"></div>
+                    <div class="ring2"></div>
                 </div>
                 <div class="cennik" id="middle">
+                    <p>STANDARD PLAN</p>
+                    <div class="price">
+                        <p class="price1"><b>95<sup>99</sup></b></p>
+                        <p class="price2">PLN/MSC</p>
+                    </div>
+                    <div class="buy">Zakup towaru + dowóz</div>
+                    <div class="service">Serwis</div>
+                    <div class="warranty">Gwarancja 5 lat</div>
+                    <input class="button" type="button" value="DOŁĄCZ" />
+                    <div class="ring"></div>
+                    <div class="ring2"></div>
                 </div>
                 <div class="cennik">
+                    <p>ADVANCE PLAN</p>
+                    <div class="price">
+                        <p class="price1"><b>211<sup>00</sup></b></p>
+                        <p class="price2">PLN/MSC</p>
+                    </div>
+                    <div class="buy">Zakup towaru + dowóz</div>
+                    <div class="service">Serwis</div>
+                    <div class="warranty">Gwarancja 6 lat</div>
+                    <div class="tips">Porady Projektanta</div>
+                    <input class="button" type="button" value="DOŁĄCZ" />
+                    <div class="ring"></div>
+                    <div class="ring2"></div>
                 </div>
             </div>
         </section>
         <section id="kontakt">
-            <div class="container"></div>
+            <div class="container">
+                <h3>KONTAKT</h3>
+                <div class="form">
+                    <form>
+                        <input type="text" name="name" placeholder="Imię"/>
+                        <input type="text" name="email" placeholder="email"/>
+                        <textarea placeholder="Wiadomość"  rows="7"></textarea>
+                    </form>
+                </div>
+                <div class="check">
+                    <div class="redChair">
+                        <img src="img/red_chair.png">
+                    </div>
+                    <div class="imgCheckbox">
+                        <img src="img/form_ok.jpg" id="bird">
+                        <p id="birdP">Zgadzam się na przetwarzanie<br>danych osobowych</p>
+                    </div>
+                    <input type="button" id="checkboxButton" value="WYŚLIJ">
+                </div>
+            </div>
         </section>
         <footer>
-            <div class="container"></div>
+            <div class="container">
+                <p id="copyright">Copy right 2014 | All rights reserved. - Sit On Chair</p>
+                <p id="sitOnChair">SIT <strong>ON</strong> CHAIR</p>
+                <div class="twitter">
+                    <img src="img/flickr.png">
+                    <img src="img/vimeo.png">
+                    <img src="img/pinterest.png">
+                    <img src="img/twitter.png">
+                </div>
+            </div>
         </footer>
     </body>
 </html>

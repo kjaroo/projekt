@@ -47,6 +47,7 @@ html, body {
 .container {
     width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 
 header {
@@ -60,7 +61,7 @@ header p {
     margin: 0;
 }
 span {
-    color: #26c7a9;
+    color: rgb(39,199,171);
     font-weight: bold;
 }
 li {
@@ -85,11 +86,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', end
 #krzeslo {
     width: 450px;
     float: left;
+    padding: 50px 0;
+}
+img {
     
 }
+
 #button {
     width: 450px;
     float: left;
+    padding-top: 100px;
 }
 #centralP {
     color: black;
@@ -106,7 +112,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', end
     bottom: 0;
     line-height: 405px;
     font-size: 80px;
-    color: #26c7a9;
+    color: rgb(39,199,171);
     margin: 0 auto;
 }
 #signLeft {
@@ -122,57 +128,238 @@ button {
     color: white;
     font-size: 18px;
     text-align: center;
-    background-color: #26c7a9;
+    background-color: rgb(39,199,171);
     padding: 10px 25px;
-    border-radius: 8%;
+    border-radius: 15px;
+    margin-left: 125px;
 }
-#photos {
-    
+#photoContainer {
+    height: 350px;
 }
 .photo {
-    width: 329px;
+    width: 325px;
     height: 225px;
     display: inline-block;
-    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    
 }
 #photo1 {
     background-image: url(../img/box1_img.jpg);
+    float: left;
 }
-#photo2 {
-    background-image: url(../img/box2_img.jpg);
+#photo1 p, #photo2 p {
+    box-shadow:  0 10px 0 rgb(39,199,171);
+    width: 160px;
 }
-#photo3 {
-    
-}
-h2 {
-   box-shadow: 0 10px 0 #26c7a9;
+.photoText {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px 0;
+    margin-top: 125px;
 }
 
-#photo1_1 {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+#photo2 {
+    background-image: url(../img/box2_img.jpg);
+    float: left;
+    margin: 30px 60px 0 60px;
+
 }
+#photo3 {
+    float: left;
+    border: 1px solid lightgray;
+    
+    
+}
+#headline {
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 10px 0 rgb(39,199,171);
+    width: 150px;
+    
+}
+#photo3 p {
+    margin: 20px 0 0 20px;
+    
+}
+
+
+
+
 #cennik {
-    background-color: lightgrey;
+    background-color: rgb(241,241,241);
+    height: 700px;
 }
 h3 {
     display: block;
-    box-shadow: 0 10px 0 #26c7a9;
+    box-shadow: 0 10px 0 rgb(39,199,171);
     padding-top: 50px;
+    width: 320px;
 }
 .cennik {
     width: 330px;
-    height: 400px;
+    height: 500px;
     border: 1px solid grey;
-    display: inline-block;
     margin: 50px 0;
+    display: inline-block;
+    float: left;
+    background-color: rgb(249,249,249);
+    position: relative;
+    
+}
+div.cennik > p {
+    font-size: 16px;
+    color: rgb(39,199,171);
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+}
+.price {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    border: 3px solid rgb(196,196,196);
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+}
+.price1 {
+    font-size: 24px;
+    color: rgb(196,196,196);
+    padding-top: 15px;
+}
+.price2 {
+    color: rgb(196,196,196);
+    font-weight:600;
+}
+.buy {
+    background-color: rgb(228,228,228);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0 ;
+    color: rgb(178,178,178);
+}
+.service {
+    background-color: rgb(241,241,241);
+    text-align: center;
+    padding: 10px 0 ;
+    color: rgb(178,178,178);
+}
+.warranty {
+    padding: 10px 0 ;
+    text-align: center;
+    background-color: rgb(228,228,228);
+    color: rgb(178,178,178);
+}
+.tips {
+    padding: 10px 0 ;
+    text-align: center;
+    background-color: rgb(241,241,241);
+    color: rgb(178,178,178);
+}
+.button {
+    position: absolute;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    font-size: 18px;
+    border-color: rgb(39,199,171);
+    background-color: rgb(39,199,171);
+    color: white;
+    margin-left: 95px;
+    bottom: 60px;
+    border-radius: 15px;
+}
+.ring {
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 140px;
+    top: -30px;
+    background-color: white;
+}
+.ring2 {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(196,196,196);
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(196,196,196);
+    margin-left: 155px;
+    top: -15px;
 }
 #middle {
-    margin: -50px 50px 50px 50px;
+    margin: 50px 50px 0 50px;
 }
 #kontakt {
     
 }
+.form {
+    padding-top: 30px;
+    width: 800px;
+    height: 450px;
+    float: left;
+}
+input {
+    display: block;
+    width: 90%;
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid rgb(39,199,171);
+}
+textarea {
+    width: 90%;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid rgb(39,199,171);
+}
+.check {
+    padding-top: 30px;
+    width: 290px;
+    height: 450px;
+    float: left;
+}
+.redChair {
+    width: 300px;
+    margin: 0 auto;
+}
+#bird {
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid rgb(39,199,171);
+    padding: 2px;
+}
+#birdP {
+    margin-top: 30px;
+    display: inline-block;
+    color: rgb(178,178,178);
+}
+#checkboxButton {
+    width: 100%;
+    background-color: rgb(39,199,171);
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 40px 0 0 0;
+}
+#copyright {
+    float: left;
+    color: rgb(178,178,178);
+    margin: 60px 0;
+}
+#sitOnChair {
+    float: right;
+    color: rgb(158,158,158);
+    margin: 60px 0;
+    font-size: 18px;
+}
+.twitter {
+    float: right;
+    margin: 50px 60px;
+}
+
 footer {
     
 }
