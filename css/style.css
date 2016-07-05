@@ -198,7 +198,7 @@ h3 {
 .cennik {
     width: 330px;
     height: 500px;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     margin: 50px 0;
     display: inline-block;
     float: left;
@@ -266,7 +266,7 @@ div.cennik > p {
     background-color: rgb(39,199,171);
     color: white;
     margin-left: 95px;
-    bottom: 60px;
+    bottom: 20px;
     border-radius: 15px;
 }
 .ring {
@@ -357,9 +357,39 @@ textarea {
 }
 .twitter {
     float: right;
-    margin: 50px 60px;
+    margin: 50px 50px;
 }
-
-footer {
-    
+.cennik:hover {
+    background-color: rgb(39,199,171);
+    border-color: rgb(39,199,171);
+}
+.cennik:hover .ring {
+    background-color: rgb(39,199,171);
+    border-color: rgb(39,199,171);
+}
+.cennik:hover .ring2 {
+    background-color: white;
+    border-color: white;
+}
+.cennik:hover .price {
+    border-color: rgb(39,199,171);
+}
+.cennik:hover .price1 {
+    color: rgb(39,199,171);
+}
+.cennik:hover .price2 {
+    color: rgb(39,199,171);
+}
+.cennik:hover .button {
+    color: rgb(39,199,171);
+    background-color: white;
+}
+.cennik:hover > p {
+    color: white;
+}
+.cennik:hover .buy {
+    background-color: white;
+}
+.cennik:hover .warranty {
+    background-color: white;
 }
