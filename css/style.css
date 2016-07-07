@@ -77,11 +77,22 @@ ol > li {
 .dropList {
     position: absolute;
     display: none;
+    top: 94px;
     z-index: 1;
 }
 ul > li {
     background-color: black;
- 
+    padding: 10px 15px;
+    line-height: 150%;
+}
+#kk {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    margin-left: 35px;
+    transform:rotate(45deg);
+    top: -10px;
 }
 #slider {
     width: 100%;
