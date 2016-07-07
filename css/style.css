@@ -49,6 +49,9 @@ html, body {
     margin: 0 auto;
     position: relative;
 }
+.visible {
+    display: none;
+}
 
 header {
     background-color: black;
