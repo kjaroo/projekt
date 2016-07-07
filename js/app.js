@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     img[index].classList.remove("visible");
     
-    prev.addEventListener("click", function(event){
+    next.addEventListener("click", function(event){
         img[index].classList.toggle("visible");
         index = index + 1;
         if (index > img.length-1) {
@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", function(){
         
     });
     
-    next.addEventListener("click", function(event){
+    prev.addEventListener("click", function(event){
         img[index].classList.toggle("visible");
-        index = index + 1;
-        if (index > img.length-1) {
-            index = 0;
+        index = index - 1;
+        if (index < 0) {
+            index = img.length - 1;
         }
         img[index].classList.toggle("visible");
         
