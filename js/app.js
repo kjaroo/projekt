@@ -31,10 +31,20 @@ document.addEventListener("DOMContentLoaded", function(){
     prev.addEventListener("click", function(event){
         img[index].classList.toggle("visible");
         index = index + 1;
-        img[index].classList.toggle("visible");
-        if( index > img.length - 1 ) {
+        if (index > img.length-1) {
             index = 0;
         }
+        img[index].classList.toggle("visible");
+        
     });
-
+    
+    next.addEventListener("click", function(event){
+        img[index].classList.toggle("visible");
+        index = index + 1;
+        if (index > img.length-1) {
+            index = 0;
+        }
+        img[index].classList.toggle("visible");
+        
+    });
 });
