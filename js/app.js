@@ -19,11 +19,8 @@ document.addEventListener("DOMContentLoaded", function(){
     
     
     var next = document.querySelector("#signRight");
-    console.log(next)
     var prev = document.querySelector("#signLeft");
-    console.log(prev)
     var img = document.querySelectorAll("#krzeslo > img");
-    console.log(img);
     var index = 0;
     
     img[index].classList.remove("visible");
