@@ -44,4 +44,15 @@ document.addEventListener("DOMContentLoaded", function(){
         img[index].classList.toggle("visible");
         
     });
+    var list = document.querySelector("ol > li:last-Child");
+    console.log(list);
+    var dropList = document.querySelector(".dropList");
+    console.log(dropList);
+    
+    list.addEventListener("mouseover", function(event){
+        dropList.style.display = "block";
+    });
+    list.addEventListener("mouseout",function(event){
+        dropList.style.display = "none";
+    });
 });

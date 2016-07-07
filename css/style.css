@@ -67,12 +67,21 @@ span {
     color: rgb(39,199,171);
     font-weight: bold;
 }
-li {
+ol > li {
     color: white;
     display: inline-block;
     float: right;
     line-height: 80px;
     padding: 0 20px;
+}
+.dropList {
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+ul > li {
+    background-color: black;
+ 
 }
 #slider {
     width: 100%;
